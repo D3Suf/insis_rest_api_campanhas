@@ -22,7 +22,7 @@ const config = require('./config.json');
 /**
  * Host Configuration
  */
-const PORT = config.app_port || 8080;
+const PORT = process.env.PORT || config.app_port || 8080;
 const SERVER_ROOOT = config.app_url + ":" + PORT;
 
 /**
