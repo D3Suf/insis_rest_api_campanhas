@@ -1,0 +1,12 @@
+{
+    "db_host": [
+        "mongodb://",
+        "@insis-shard-00-00-jqcch.mongodb.net:27017,insis-shard-00-01-jqcch.mongodb.net:27017,insis-shard-00-02-jqcch.mongodb.net:27017/",
+        "?ssl=true&replicaSet=INSIS-shard-0&authSource=admin"
+    ],
+    "db_name": "insis_rest_api_campanha",
+    "db_user": "insis",
+    "db_pass": "insis_17_18",
+    "app_url": "https://insiscampanhanode.herokuapp.com/",
+    "app_port": "8080"
+}

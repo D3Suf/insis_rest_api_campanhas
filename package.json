@@ -1,0 +1,24 @@
+{
+    "name": "insis_campanha_rest_api",
+    "version": "0.0.1",
+    "main": "app.js",
+    "dependencies": {
+        "body-parser": "*",
+        "express": "*",
+        "mongoose": "*",
+        "nodemon": "*",
+        "request": "*"
+    },
+    "scripts": {
+        "test": "node app.js",
+        "start": "node app.js",
+        "startdev": "nodem app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://antoniocarl0s@bitbucket.org/antoniocarl0s/insis_rest_api.git"
+    },
+    "author": "António Carlos Sousa, Gonçalo Reis",
+    "license": "ISC",
+    "homepage": "https://bitbucket.org/antoniocarl0s/insis_rest_api"
+}
