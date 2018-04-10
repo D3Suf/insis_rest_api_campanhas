@@ -41,6 +41,8 @@ db.on('error', console.error.bind(console, "MongoDB connection error: "));
 var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+// set the view engine to ejs
+app.set('view engine', 'ejs');
 
 /**
  * Load Routes
@@ -48,6 +50,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', routes.index);
 app.use('/campanha', routes.campanha);
 app.use('/channel', routes.channel);
+// make express look in the public directory for assets (css/js/img)
+app.use(express.static(__dirname + '/public'));
 
 
 /**

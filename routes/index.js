@@ -11,7 +11,7 @@ const express = require('express')
  * @Method [GET]
  */
 router.get('/', function(req, res){
-    res.status(200).send('OK ... Returning documentation SOON!');
+    res.status(200).render('index');
 });
 
 
