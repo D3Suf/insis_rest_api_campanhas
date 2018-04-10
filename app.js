@@ -45,7 +45,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 /**
  * Load Routes
  */
-app.use('/wiki', routes.index);
+app.use('/', routes.index);
 app.use('/campanha', routes.campanha);
 app.use('/channel', routes.channel);
 
