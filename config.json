@@ -8,5 +8,5 @@
     "db_user": "insis",
     "db_pass": "insis_17_18",
     "app_url": "https://insiscampanhanode.herokuapp.com/",
-    "app_port": "8080"
+    "app_port": "9090"
 }

@@ -15,16 +15,42 @@
 <body>
 
     <div class="container">
-        <div class="jumbotron text-center">
-            <h1>
-                This is the wiki of
-                <strong>Campanhas</strong>
-                <br/> Rest API
-            </h1>
-            <a href="https://bitbucket.org/antoniocarl0s/insis_rest_api/" class="btn btn-primary btn-lg">Check more on BitBucket</a>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron text-center">
+                    <h1>
+                        This is the wiki of
+                        <strong>Campanhas</strong>
+                        <br/> Rest API
+                    </h1>
+                    <a href="https://bitbucket.org/antoniocarl0s/insis_rest_api/" class="btn btn-primary btn-lg">Check more on BitBucket</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>
+                        <b>Version: </b>
+                        <%= infoArray.version %>
+                    </h3>
+                </div>
+
+                <div class="col-md-12">
+                    <h3>
+                        <b>Authors: </b>
+                    </h3>
+                    <% Array.prototype.forEach.call(infoArray.owners, author => { %>
+                        <h3>
+                            <b>Nome: </b>
+                            <%= author.name %>
+                                <br>
+                                <b> Nº: </b>
+                                <%= author.number %>
+                        </h3>
+                        <% }) %>
+                </div>
+            </div>
         </div>
     </div>
-
 </body>
 
 </html>
