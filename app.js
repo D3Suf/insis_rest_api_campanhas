@@ -22,6 +22,7 @@ const config = require('./config.json');
 /**
  * Host Configuration
  */
+
 // como esta aplicação está o "deployed" na cloud temos está configuração obrigatoria para o PORT
 // process.env.PORT -> configuração necessária para o heroku executar a API
 // config.app_port -> para execução local (DEV)
